@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-geist-sans: "Inter", "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-geist-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #FAFAF9;
+  color: #15171C;
+}
+
+* {
+  border-color: #ECEBE7;
+}
+
+::selection {
+  background: #D9B876;
+  color: #15171C;
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid #B08D3F;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #DFDDD7;
+  border-radius: 999px;
+}

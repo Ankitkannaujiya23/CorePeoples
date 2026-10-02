@@ -1,0 +1,78 @@
+export const employees = [
+  {
+    id: "emp_1",
+    name: "Rahul Sharma",
+    role: "Senior Developer",
+    department: "Engineering",
+    email: "rahul@acme.com",
+    avatarColor: "#B08D3F",
+    blurb: "Always helps the team debug production issues at 2am without complaint.",
+  },
+  {
+    id: "emp_2",
+    name: "Amit Kumar",
+    role: "Product Designer",
+    department: "Design",
+    email: "amit@acme.com",
+    avatarColor: "#2A2E38",
+    blurb: "Redesigned the onboarding flow and cut drop-off by half this quarter.",
+  },
+  {
+    id: "emp_3",
+    name: "Priya Singh",
+    role: "Engineering Manager",
+    department: "Engineering",
+    email: "priya@acme.com",
+    avatarColor: "#8F7132",
+    blurb: "Mentored three new hires and kept the team shipping on time.",
+  },
+  {
+    id: "emp_4",
+    name: "Neha Verma",
+    role: "Customer Success Lead",
+    department: "Support",
+    email: "neha@acme.com",
+    avatarColor: "#565C6D",
+    blurb: "Turned an escalation into our most loyal enterprise account.",
+  },
+  {
+    id: "emp_5",
+    name: "Karan Singh",
+    role: "Backend Engineer",
+    department: "Engineering",
+    email: "karan@acme.com",
+    avatarColor: "#3C4150",
+    blurb: "Rebuilt the billing pipeline with zero downtime.",
+  },
+  {
+    id: "emp_6",
+    name: "Anjali Gupta",
+    role: "Marketing Manager",
+    department: "Marketing",
+    email: "anjali@acme.com",
+    avatarColor: "#B33A3A",
+    blurb: "Led the campaign that doubled trial signups in July.",
+  },
+  {
+    id: "emp_7",
+    name: "Rohan Mehta",
+    role: "Sales Executive",
+    department: "Sales",
+    email: "rohan@acme.com",
+    avatarColor: "#2E7D46",
+    blurb: "Closed our largest deal of the year, ahead of forecast.",
+  },
+  {
+    id: "emp_8",
+    name: "Simran Kapoor",
+    role: "HR Business Partner",
+    department: "People",
+    email: "simran@acme.com",
+    avatarColor: "#6E5726",
+    blurb: "Redesigned the review cycle so it actually feels fair.",
+  },
+];
+
+export function getEmployeeById(id) {
+  return employees.find((e) => e.id === id) || null;
+}
